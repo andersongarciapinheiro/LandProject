@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Estudos</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/index.css" >
+  <link rel="stylesheet" href="./css/calculadora.css">
+
+  
+</head>
+
+<body>
+  <nav class="links">
+    <label for="rd_home">Home</label>
+    <label for="rd_galeria">Galeria</label>
+    <label for="rd_projeto">Projeto</label>
+    <label for="rd_sobre">Sobre</label>
+    <label for="rd_calculadora">Calculadora</label>
+    <label for="rd_contato">Contato</label>
+  </nav>
+  <div class="scroll">
+    <input type="radio" name="grupo" id="rd_home" checked="true">
+    <input type="radio" name="grupo" id="rd_galeria">
+    <input type="radio" name="grupo" id="rd_projeto">
+    <input type="radio" name="grupo" id="rd_sobre">
+    <input type="radio" name="grupo" id="rd_calculadora">
+    <input type="radio" name="grupo" id="rd_contato">
+    
+    
+    <section class="sections">
+      <section class="bloco" id="home">
+        teste anderson 1        
+      </section>
+      <section class="bloco" id="galeria">
+        <div class="carrossel">
+          <div class="imgs1">
+            <div class="img1"></div>
+            <div class="img2"></div>
+            <div class="img3"></div>
+            <div class="img4"></div>
+            <div class="img5"></div>
+            <div class="img6"></div>
+            <div class="img7"></div>
+            <div class="img8"></div>
+          </div>
+        </div>
+      </section>
+      <section class="bloco" id="projeto">
+        teste anderson 3
+      </section>
+      <section class="bloco" id="sobre">
+        teste anderson 4
+      </section>
+      <section class="bloco" id="calculadora">
+        <div class="calc">
+          <h1>GAR</h1>
+          
+          <h5>PESO:</h5>	
+          <input type="text" name="peso" class="peso" value="110">
+          <p class="alertTxtPeso"></p>
+          <h5>ALTURA:</h5>
+          <input type="text" name="altura" class="altura" value="183">	
+          <p class="alertTxtAltura"></p>
+          <h5>IDADE:</h5>
+          <input type="text" name="idade" class="idade" value="32">
+          <p class="alertTxtIdade"></p>
+          
+          <h5>PROTEINA:</h5>	
+          <input type="text" name="prot" class="prot" value="45">
+          <p class="alertTxtProt"></p>
+          <h5>CARBO:</h5>
+          <input type="text" name="carb" class="carb" value="35">	
+          <p class="alertTxtCarb"></p>
+          <h5>GORDURA:</h5>
+          <input type="text" name="gord" class="gord" value="20">	
+          <p class="alertTxtGord"></p>	
+          <h5>TMB:</h5>
+          <input type="text" name="tmb" disabled class="tmb">
+          <p class="alertTxtTmb"></p>
+          <div class="buttons">
+            <button class="calcular">Calcular</button>
+            <button class="reset">Reset</button>
+          </div>
+          <div class="resultTxt">
+            <p class="txtProt"></p>
+            <p class="txtCarb"></p>
+            <p class="txtGord"></p>
+          </div>
+          <div class="error"></div>	
+        </div>
+      </section>
+      <section class="bloco" id="contato">
+        teste anderson 5
+      </section>
+    </section>
+  </div>
+  <script src="./js/index.js"></script>
+  <script src="./js/calculadora.js"></script>
+  
+</body> 
+</html>
