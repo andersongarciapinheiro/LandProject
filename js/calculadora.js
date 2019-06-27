@@ -28,7 +28,7 @@
   calcular.onclick = function (){
     resetAlert()
     validaCampos()
-
+    console.log(macros)
   
   }
   
@@ -70,6 +70,7 @@
       applyClass()
       resultTxt.style.display = "flex"
       error.innerHTML = ''
+      macros = []      
     }
   }
   
