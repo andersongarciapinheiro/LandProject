@@ -24,17 +24,7 @@
   /* background-color: #000; */
   background-image: url("../assets/angar_01.jpg");
   background-repeat: no-repeat;
-  background-position: center; 
-}
-
-.noHit{
-  position: absolute;
-  width: 600px;
-  height: 320px;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translatey(-50%); 
-  z-index: -1;
+  background-position: center;
 }
 
 .bgImg1Full {
@@ -56,6 +46,7 @@
   background-image: url("../assets/angar_01.jpg");
   background-repeat: no-repeat;
   background-position: center; 
+  pointer-events: none;
 }
 
 .img2 {
@@ -101,6 +92,8 @@
 .img1:hover ,.img2:hover ,.img3:hover ,.img4:hover ,.img5:hover ,.img6:hover ,.img7:hover ,.img8:hover {
   box-shadow: 4px 4px 10px #000a;
   transition: .1s ease-out;
+  cursor: pointer;
+
 }
 
 
