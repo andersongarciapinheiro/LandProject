@@ -8,7 +8,7 @@ img1.onclick = function() {
 }
 
 bgImg1Full.onclick = function(e) {
-console.log(e.target)
+console.log(e)
 
   if(e.target == img1Full) {
     bgImg1Full.style.zIndex = "1"
@@ -16,3 +16,7 @@ console.log(e.target)
     bgImg1Full.style.zIndex = "-1"
   }
 }
+
+
+
+
