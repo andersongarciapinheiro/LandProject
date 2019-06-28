@@ -29,6 +29,9 @@
 
 .bgImg1Full {
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   top: 0;
   width: 100%;
   height: 100%;
@@ -37,16 +40,11 @@
   }
 
 .img1Full {
-  position: absolute;
+  position: relative;
   width: 600px;
   height: 320px;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translatey(-50%); 
   background-image: url("../assets/angar_01.jpg");
   background-repeat: no-repeat;
-  background-position: center; 
-  pointer-events: none;
 }
 
 .img2 {
