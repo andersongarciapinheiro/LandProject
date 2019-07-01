@@ -1,3 +1,13 @@
+#home,
+#galeria,
+#projeto,
+#sobre,
+#calculadora,
+#contato {
+  overflow: hidden;
+}
+
+
 .carrossel {
   width: 90%;
   height: 90%;
