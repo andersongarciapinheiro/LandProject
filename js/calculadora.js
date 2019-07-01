@@ -1,7 +1,11 @@
   let macros = []
+  let homem = false;
+  let mulher = false;
   let proteinaTotal
   let carboTotal
   let gordTotal
+  let inputHomem = document.querySelector('#homem')
+  let inputMulher = document.querySelector('#mulher')
   let vpeso = document.querySelector('.peso')
   let valtura = document.querySelector('.altura')
   let vidade = document.querySelector('.idade')
@@ -24,26 +28,43 @@
   let alertTxtCarb = document.querySelector('.alertTxtCarb')
   let alertTxtGord = document.querySelector('.alertTxtGord')
   
+ 
+
+
+  inputHomem.onclick = function (){
+    if(inputHomem.checked) {
+      homem = true
+      mulher = false
+    } 
+  }
+
+  inputMulher.onclick = function (){
+    if (inputMulher.checked) {
+      mulher = true
+      homem = false
+    }
+  
+  }
   
   calcular.onclick = function (){
     resetAlert()
     validaCampos()
-    console.log(macros)
-  
   }
   
   reset.onclick = function (){
     resetAlert()
     resetInput()
     removeClass()
+    inputHomem.checked = 0
+    inputMulher.checked = 0
   }
   
   function validaCampos () {
     let valorProt = parseInt(prot.value)
     let valorCarb = parseInt(carb.value)
     let valorGord = parseInt(gord.value)
-  
-    if(vpeso.value < 50) {alertTxtPeso.innerHTML = "!"}
+    if(inputHomem.checked == false && inputMulher.checked == false) {alert('Defina Homem ou Mulher')}
+    else if(vpeso.value < 50) {alertTxtPeso.innerHTML = "!"}
     else if(valtura.value < 50) {alertTxtAltura.innerHTML = "!"}
     else if(vidade.value < 13) {alertTxtIdade.innerHTML = "!"}
     else if(prot.value < 1) {alertTxtProt.innerHTML = "!"}
@@ -86,8 +107,8 @@
     txtCarb.textContent = ''
     txtGord.textContent = ''
     error.textContent = ''
-  
   }
+  
   
   function resetAlert (){
     alertTxtPeso.innerHTML = ''
@@ -123,11 +144,21 @@
   
   function calculaBasal() {
   
-    let vresultado = 0;
-  
-    vresultado = 66 + (13.7 * +vpeso.value) + (5 * +valtura.value) - (6.8 * +vidade.value).toFixed(0);
-    tmb.value = vresultado.toFixed(0) 
-  
+    if(homem) {
+      let vresultado = 0;
+    
+      vresultado = 66 + (13.7 * +vpeso.value) + (5 * +valtura.value) - (6.8 * +vidade.value).toFixed(0);
+      tmb.value = vresultado.toFixed(0) 
+    } 
+    if(mulher) {
+
+      let vresultado = 0;
+
+      vresultado = 655 + (9.6 * +vpeso.value) + (1.7 * +valtura.value) - (4.7 * +vidade.value).toFixed(0);
+      tmb.value = vresultado.toFixed(0) 
+
+    }
+    
   }
 
   
@@ -135,7 +166,9 @@
   
   
   
-  
+
+
+
   
   
   

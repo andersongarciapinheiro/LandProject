@@ -61,7 +61,7 @@ p{
 .alertTxtGord {
 	font-size: 15px;
 	color: red;
-	font-weight: bold;
+	font-weight: normal;
 	width: 3px;
 }
 
@@ -71,7 +71,7 @@ h5 {
 	width: 100px;
 }
 
-input {
+.inputDados {
 	width: 120px;
 	height: 15px;
 	border: 1px solid rgba(0,0,0,0.1);
@@ -79,6 +79,19 @@ input {
 	background: radial-gradient(#ffffff 1000%);
 	box-shadow: inset 0 3px 5px rgba(0,0,0,0.2);
 	outline: transparent;
+}
+
+.inputCheck {
+	width: 280px;
+	height: 15px;
+	display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.labelCheckH, .labelCheckM {
+	padding:  0 20px 0 5px;
+	font-size: 13px;
 }
 
 .tmb {

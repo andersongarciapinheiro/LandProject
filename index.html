@@ -22,12 +22,12 @@
     <label for="rd_contato">Contato</label>
   </nav>
   <div class="scroll">
-    <input type="radio" name="grupo" id="rd_home" checked="true">
-    <input type="radio" name="grupo" id="rd_galeria">
-    <input type="radio" name="grupo" id="rd_projeto">
-    <input type="radio" name="grupo" id="rd_sobre">
-    <input type="radio" name="grupo" id="rd_calculadora">
-    <input type="radio" name="grupo" id="rd_contato">
+    <input class="inputDados" type="radio" name="grupo" id="rd_home" checked="true">
+    <input class="inputDados" type="radio" name="grupo" id="rd_galeria">
+    <input class="inputDados" type="radio" name="grupo" id="rd_projeto">
+    <input class="inputDados" type="radio" name="grupo" id="rd_sobre">
+    <input class="inputDados" type="radio" name="grupo" id="rd_calculadora">
+    <input class="inputDados" type="radio" name="grupo" id="rd_contato">
     
     
     <section class="sections">
@@ -59,32 +59,42 @@
       <section class="bloco" id="calculadora">
         <div class="calc">
           <h1>GAR</h1>
+          <div class="inputCheck">
+
+            <input type="radio" id="homem" name="sexo">
+            <label class="labelCheckH" for="homem">Homem</label>
+
+            <input type="radio" id="mulher" name="sexo">
+            <label class="labelCheckM" for="mulher">Mulher</label>
+          </div>
           <h5>PESO:</h5>	
-          <input type="text" name="peso" class="peso" value="110">
+          <input type="text" name="peso" class="inputDados peso" value="110">
           <p class="alertTxtPeso"></p>
           <h5>ALTURA:</h5>
-          <input type="text" name="altura" class="altura" value="183">	
+          <input type="text" name="altura" class="inputDados altura" value="183">	
           <p class="alertTxtAltura"></p>
           <h5>IDADE:</h5>
-          <input type="text" name="idade" class="idade" value="32">
+          <input type="text" name="idade" class="inputDados idade" value="32">
           <p class="alertTxtIdade"></p>
           
           <h5>PROTEINA:</h5>	
-          <input type="text" name="prot" class="prot" value="45">
+          <input type="text" name="prot" class="inputDados prot" value="45">
           <p class="alertTxtProt"></p>
           <h5>CARBO:</h5>
-          <input type="text" name="carb" class="carb" value="35">	
+          <input type="text" name="carb" class="inputDados carb" value="35">	
           <p class="alertTxtCarb"></p>
           <h5>GORDURA:</h5>
-          <input type="text" name="gord" class="gord" value="20">	
+          <input type="text" name="gord" class="inputDados gord" value="20">	
           <p class="alertTxtGord"></p>	
           <h5>TMB:</h5>
-          <input type="text" name="tmb" disabled class="tmb">
+          <input type="text" name="tmb" disabled class="inputDados tmb">
           <p class="alertTxtTmb"></p>
+
           <div class="buttons">
             <button class="calcular">Calcular</button>
             <button class="reset">Reset</button>
           </div>
+
           <div class="resultTxt">
             <p class="txtProt"></p>
             <p class="txtCarb"></p>
