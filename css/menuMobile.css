@@ -1,4 +1,9 @@
+#nav-icon3 {
+  width: 0px;
+  height: 0px;
+  position: fixed;
 
+}
 
 @media only screen and (max-width: 800px) {
   
@@ -31,7 +36,7 @@
     background-color: #4d4d4d50
 
   }
-  
+
   .links label {
     width: 100px;
   }
