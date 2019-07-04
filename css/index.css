@@ -12,11 +12,12 @@
           font-family: "quantify";
         }
         
-        .links {
+        .links, #nav-icon3 {
           width: 100%;
           height: 50px;
           position: fixed;
           display: flex;
+          flex-wrap: wrap;
         }
 
         nav {

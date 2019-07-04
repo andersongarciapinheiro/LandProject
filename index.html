@@ -5,22 +5,33 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/index.css" >
+  <link rel="stylesheet" href="./css/menuMobile.css" >
   <link rel="stylesheet" href="./css/galeria.css">
   <link rel="stylesheet" href="./css/projeto.css">
   <link rel="stylesheet" href="./css/calculadora.css">
-
+  
   
 </head>
 
 <body>
+  
+  
   <nav class="links">
-    <label for="rd_home">Home</label>
-    <label for="rd_galeria">Galeria</label>
-    <label for="rd_projeto">Projeto</label>
-    <label for="rd_sobre">Sobre</label>
-    <label for="rd_calculadora">Calculadora</label>
-    <label for="rd_contato">Contato</label>
+    <div id="nav-icon3">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+      
+      <label for="rd_home">Home</label>
+      <label for="rd_galeria">Galeria</label>
+      <label for="rd_projeto">Projeto</label>
+      <label for="rd_sobre">Sobre</label>
+      <label for="rd_calculadora">Calculadora</label>
+      <label for="rd_contato">Contato</label>
   </nav>
+  
   <div class="scroll">
     <input class="inputDados" type="radio" name="grupo" id="rd_home" checked="true">
     <input class="inputDados" type="radio" name="grupo" id="rd_galeria">
@@ -60,10 +71,10 @@
         <div class="calc">
           <h1>GAR</h1>
           <div class="inputCheck">
-
+            
             <input type="radio" id="homem" name="sexo">
             <label class="labelCheckH" for="homem">Homem</label>
-
+            
             <input type="radio" id="mulher" name="sexo">
             <label class="labelCheckM" for="mulher">Mulher</label>
           </div>
@@ -89,12 +100,12 @@
           <h5>TMB:</h5>
           <input type="text" name="tmb" disabled class="inputDados tmb">
           <p class="alertTxtTmb"></p>
-
+          
           <div class="buttons">
             <button class="calcular">Calcular</button>
             <button class="reset">Reset</button>
           </div>
-
+          
           <div class="resultTxt">
             <p class="txtProt"></p>
             <p class="txtCarb"></p>
@@ -108,12 +119,13 @@
       </section>
     </section>
   </div>
-
+  
   <div class="bgImg1Full">
     <div class="img1Full"></div>
   </div>
   
   <script src="./js/index.js"></script>
+  <script src="./js/menuMobile.js"></script>
   <script src="./js/galeria.js"></script>
   <script src="./js/projeto.js"></script>
   <script src="./js/calculadora.js"></script>

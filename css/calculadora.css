@@ -52,6 +52,7 @@ p{
 	padding: 0px;
 	margin: 0 3px;
 }
+
 .alertTxtPeso,
 .alertTxtAltura,
 .alertTxtIdade,
@@ -73,9 +74,10 @@ h5 {
 
 .inputDados {
 	width: 120px;
-	height: 15px;
+	height: 30px;
 	border: 1px solid rgba(0,0,0,0.1);
 	border-radius: 2px;
+	font-size: 13px;
 	background: radial-gradient(#ffffff 1000%);
 	box-shadow: inset 0 3px 5px rgba(0,0,0,0.2);
 	outline: transparent;
