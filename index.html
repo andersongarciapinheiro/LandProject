@@ -4,7 +4,8 @@
   <title>Estudos</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/index.css" >
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/landAnimation.css">
   <link rel="stylesheet" href="./css/menuMobile.css" >
   <link rel="stylesheet" href="./css/galeria.css">
   <link rel="stylesheet" href="./css/projeto.css">
@@ -13,7 +14,7 @@
   
 </head>
 
-<body>
+<body id="showScroll">
  
   <nav class="links">
     <div id="nav-icon3">
@@ -23,39 +24,34 @@
       <span></span>
     </div>
       
-      <label for="rd_home">Home</label>
-      <label for="rd_galeria">Galeria</label>
-      <label for="rd_projeto">Projeto</label>
-      <label for="rd_sobre">Sobre</label>
-      <label for="rd_calculadora">Calculadora</label>
-      <label for="rd_contato">Contato</label>
+      <label class="home" for="rd_home">Home</label>
+      <label class="galeria" for="rd_galeria">Galeria</label>
+      <label class="projeto" for="rd_projeto">Projeto</label>
+      <label class="sobre" for="rd_sobre">Sobre</label>
+      <label class="calculadora" for="rd_calculadora">Calculadora</label>
+      <label class="contato" for="rd_contato">Contato</label>
   </nav>
   
-  <div class="scroll">
-    <input class="inputDados" type="radio" name="grupo" id="rd_home" checked="true">
-    <input class="inputDados" type="radio" name="grupo" id="rd_galeria">
-    <input class="inputDados" type="radio" name="grupo" id="rd_projeto">
-    <input class="inputDados" type="radio" name="grupo" id="rd_sobre">
-    <input class="inputDados" type="radio" name="grupo" id="rd_calculadora">
-    <input class="inputDados" type="radio" name="grupo" id="rd_contato">
-    
-    
+  <div class="bodyCointeiner"> 
     <section class="sections">
       <section class="bloco" id="home">
-        teste anderson 1        
+          teste anderson 1     
       </section>
       <section class="bloco" id="galeria">
         <div class="carrossel">
           <div class="imgs1">
-            <div class="img1"></div>
-            <div class="img2"></div>
-            <div class="img3"></div>
-            <div class="img4"></div>
-            <div class="img5"></div>
-            <div class="img6"></div>
-            <div class="img7"></div>
-            <div class="img8"></div>
+            <div class="img1 imgGallery"></div>
+            <div class="img2 imgGallery"></div>
+            <div class="img3 imgGallery"></div>
+            <div class="img4 imgGallery"></div>
+            <div class="img5 imgGallery"></div>
+            <div class="img6 imgGallery"></div>
+            <div class="img7 imgGallery"></div>
+            <div class="img8 imgGallery"></div>
           </div>
+        </div>
+        <div class="bgImg1Full">
+            <div class="img1Full"></div>
         </div>
       </section>
       <section class="bloco" id="projeto">
@@ -118,16 +114,14 @@
       </section>
     </section>
   </div>
-  
-  <div class="bgImg1Full">
-    <div class="img1Full"></div>
-  </div>
-  
+    
   <script src="./js/index.js"></script>
+  <script src="./js/menu.js"></script>
   <script src="./js/menuMobile.js"></script>
   <script src="./js/galeria.js"></script>
   <script src="./js/projeto.js"></script>
   <script src="./js/calculadora.js"></script>
+  <script src="./js/json.js"></script>
   
 </body> 
 </html>

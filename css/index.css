@@ -10,6 +10,7 @@
         
         body {
           font-family: "quantify";
+          height: 100%;
         }
         
         .links, #nav-icon3 {
@@ -45,17 +46,17 @@
           display: none;
         }
         
-        .scroll {
+        .bodyCointeiner {
           display: flex;
           width: 100vw;
-          height: 100vh;
-          overflow: hidden;
+          /* height: 100vw; */
+          /* overflow: hidden; */
           /* overflow-y: scroll; */
         }
         
         .bloco {
           width: 100vw;
-          height: 100vh;
+          height: 947px;
           display: flex;
           justify-content: center;
           align-items: center;
@@ -84,23 +85,4 @@
         
         .sections{
           transition: all .4s ease-out;
-        }
-        
-        #rd_galeria:checked ~ .sections {
-          margin-top: -100vh;
-        }
-        
-        #rd_projeto:checked ~ .sections {
-          margin-top: -200vh;
-        }
-        
-        #rd_sobre:checked ~ .sections {
-          margin-top: -300vh;
-        }
-        #rd_calculadora:checked ~ .sections {
-          margin-top: -400vh;
-        }
-        
-        #rd_contato:checked ~ .sections {
-          margin-top: -500vh;
         }
