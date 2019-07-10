@@ -32,7 +32,6 @@ window.addEventListener('scroll', function() {
 // function to animate gallery on scolling
 function animeScroll() {
   let windowTop = window.pageYOffset;
-  console.log(blocoGallery.offsetTop)
 
   let isProjectLowerThanWindow = windowTop > blocoProjeto.offsetTop
   let isProjectGreatedThanWindow = windowTop <= blocoProjeto.offsetTop

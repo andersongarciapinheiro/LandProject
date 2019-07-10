@@ -37,7 +37,7 @@
 
   }
 
-  .links label {
+  .links label, nav a {
     width: 100px;
   }
   
