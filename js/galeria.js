@@ -22,24 +22,33 @@ bgImg1Full.onclick = function(e) {
     bgImg1Full.style.zIndex = "-1"
   }
 }
-// function to animate gallery on scolling
-function animeScroll() {
-  
-  let windowTop = window.pageYOffset;
-  let isProjectLowerThanWindow = windowTop > blocoProjeto.offsetTop
-  let isProjectGreatedThanWindow = windowTop < blocoProjeto.offsetTop
-  let isHomeLowerThanWindow = windowTop > blocoHome.offsetTop 
-  let isGalleryGreatedThanWindow = windowTop < blocoGallery.offsetTop
-  let isGalleryLowerThanWindow = windowTop > blocoGallery.offsetTop
 
-    if((isHomeLowerThanWindow && isGalleryGreatedThanWindow) || isProjectLowerThanWindow) {
-        gallery.forEach(e => e.classList.remove("Slacken_left_Ricochet"))
-    }
-    else if( isGalleryLowerThanWindow && isProjectGreatedThanWindow) {
-        gallery.forEach(e => e.classList.add("Slacken_left_Ricochet"))
-    }
-}
 
 window.addEventListener('scroll', function() {
   animeScroll();
 })
+
+
+// function to animate gallery on scolling
+function animeScroll() {
+  let windowTop = window.pageYOffset;
+  console.log(blocoGallery.offsetTop)
+
+  let isProjectLowerThanWindow = windowTop > blocoProjeto.offsetTop
+  let isProjectGreatedThanWindow = windowTop <= blocoProjeto.offsetTop
+  let isHomeLowerThanWindow = windowTop > blocoHome.offsetTop 
+  let isGalleryGreatedThanWindow = windowTop < blocoGallery.offsetTop
+  let isGalleryLowerThanWindow = windowTop >= blocoGallery.offsetTop
+  
+  if((isHomeLowerThanWindow && isGalleryGreatedThanWindow) || isProjectLowerThanWindow) {
+    gallery.forEach(e => e.classList.remove("efeitoFiltrosHard"))
+  }
+  else if( isGalleryLowerThanWindow && isProjectGreatedThanWindow) {
+    gallery.forEach(e => e.classList.add("efeitoFiltrosHard"))
+  }
+}
+
+
+// efeitoFiltrosHard
+// goGo
+// goGo_2
