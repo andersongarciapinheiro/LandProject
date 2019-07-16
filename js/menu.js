@@ -30,14 +30,12 @@ let sections = document.querySelectorAll('nav a');
 
 sections.forEach(i => {
   i.addEventListener('click', scrollToIdOnClick)
-
 })
 
 
 function scrollToIdOnClick(event) {
   event.preventDefault()
   const to = getScrollToByHref(event.target)
-
   scrollToPosition(to)  
 }
 
@@ -46,7 +44,6 @@ function scrollToPosition(to) {
   //   top: to,
   //   behavior: "smooth",
   // })
-
   smoothScrollTo(0, to)
 }
 
@@ -82,6 +79,7 @@ function getScrollToByHref(element) {
  
    const timer = setInterval(() => {
      const time = new Date().getTime() - startTime;
+     
      const newX = easeInOutQuart(time, startX, distanceX, duration);
      const newY = easeInOutQuart(time, startY, distanceY, duration);
      if (time >= duration) {
@@ -90,3 +88,4 @@ function getScrollToByHref(element) {
      window.scroll(newX, newY);
    }, 1000 / 60); // 60 fps
  };
+

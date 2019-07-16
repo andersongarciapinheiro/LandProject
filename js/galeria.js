@@ -34,7 +34,7 @@ function animeScroll() {
   let windowTop = window.pageYOffset;
 
   let isProjectLowerThanWindow = windowTop > blocoProjeto.offsetTop
-  let isProjectGreatedThanWindow = windowTop <= blocoProjeto.offsetTop
+  let isProjectGreatedThanWindow = windowTop < (blocoProjeto.offsetTop - 400)
   let isHomeLowerThanWindow = windowTop > blocoHome.offsetTop 
   let isGalleryGreatedThanWindow = windowTop < blocoGallery.offsetTop
   let isGalleryLowerThanWindow = windowTop >= blocoGallery.offsetTop
