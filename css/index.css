@@ -39,13 +39,31 @@
           
         }
         
-        .carrosel-imgs {
+        .carrosel-img1 {
           position: relative;
           width: 100%;
           height: 100%;
-          background-image: url("https://bnetcmsus-a.akamaihd.net/cms/gallery/6J0O6FJP1O991581454174174.jpg");
           background-repeat: no-repeat;
           background-position: center;
+          background-image: url("https://bnetcmsus-a.akamaihd.net/cms/gallery/6J0O6FJP1O991581454174174.jpg");
+        }
+
+        .setBg-a {
+          background-repeat: no-repeat;
+          background-position: center;
+          background-image: url("https://bnetcmsus-a.akamaihd.net/cms/gallery/6J0O6FJP1O991581454174174.jpg");
+        }
+        
+        .setBg-b {
+          background-repeat: no-repeat;
+          background-position: center;
+          background-image: url("https://bnetcmsus-a.akamaihd.net/cms/gallery/OYNPJ4AN7NGR1582597877633.png");
+        }
+
+        .setBg-c {
+          background-repeat: no-repeat;
+          background-position: center;
+          background-image: url("https://bnetcmsus-a.akamaihd.net/cms/gallery/VTQ3BCWTBP1B1580160868201.jpg");
         }
 
         .left, .right {
@@ -63,8 +81,3 @@
         .right {
           right: 20px;
         }
-
-
-        /* <!-- <img src="https://bnetcmsus-a.akamaihd.net/cms/gallery/6J0O6FJP1O991581454174174.jpg" alt="">
-            <img src="https://bnetcmsus-a.akamaihd.net/cms/gallery/OYNPJ4AN7NGR1582597877633.png" alt="">
-            <img src="https://bnetcmsus-a.akamaihd.net/cms/gallery/VTQ3BCWTBP1B1580160868201.jpg" alt=""> --> */
