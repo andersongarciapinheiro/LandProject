@@ -1,21 +1,23 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
   <title>Estudos</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/menu.css">
   <link rel="stylesheet" href="./css/landAnimation.css">
-  <link rel="stylesheet" href="./css/menuMobile.css" >
+  <link rel="stylesheet" href="./css/menuMobile.css">
   <link rel="stylesheet" href="./css/galeria.css">
   <link rel="stylesheet" href="./css/projeto.css">
+  <link rel="stylesheet" href="./css/sobre.css">
   <link rel="stylesheet" href="./css/calculadora.css">
-  
-  
+  <link rel="stylesheet" href="./css/contato.css">
 </head>
 
 <body id="showScroll">
- 
   <nav class="links">
     <div id="nav-icon3">
       <span></span>
@@ -23,19 +25,24 @@
       <span></span>
       <span></span>
     </div>
-      
-      <a id="linkMenu" href="#home">Home</a>
-      <a id="linkMenu" href="#galeria">Galeria</a>
-      <a id="linkMenu" href="#projeto">Projeto</a>
-      <a id="linkMenu" href="#sobre">Sobre</a>
-      <a id="linkMenu" href="#calculadora">Calculadora</a>
-      <a id="linkMenu" href="#contato">Contato</a>
+    <a id="linkMenu" href="#home"><img class="logo" src="./assets/logo.png" alt=""></a>
+    <a id="linkMenu" href="#home">me</a>
+    <a id="linkMenu" href="#galeria">leria</a>
+    <a id="linkMenu" href="#projeto">ojeto</a>
+    <a id="linkMenu" href="#sobre">bre</a>
+    <a id="linkMenu" href="#calculadora">lculadora</a>
+    <a id="linkMenu" href="#contato">ntato</a>
   </nav>
-  
-  <div class="bodyCointeiner"> 
+
+  <div class="bodyCointeiner">
     <section class="sections">
-      <section class="bloco" id="home">
-          teste anderson 1     
+      <section class="bloco-a" id="home">
+        <div class="carrose-1">
+          <div class="carrosel-imgs">
+            <div class="left"></div>
+            <div class="right"></div>
+          </div>
+        </div>
       </section>
       <section class="bloco" id="galeria">
         <div class="carrossel">
@@ -51,13 +58,11 @@
           </div>
         </div>
         <div class="bgImg1Full">
-            <div class="img1Full"></div>
+          <div class="img1Full"></div>
         </div>
       </section>
       <section class="bloco" id="projeto">
-        <div class="fireCanvas">
-          
-        </div>
+        teste anderson 3
       </section>
       <section class="bloco" id="sobre">
         teste anderson 4
@@ -66,47 +71,45 @@
         <div class="calc">
           <h1>GAR</h1>
           <div class="inputCheck">
-            
             <input type="radio" id="homem" name="sexo">
             <label class="labelCheckH" for="homem">Homem</label>
-            
+
             <input type="radio" id="mulher" name="sexo">
             <label class="labelCheckM" for="mulher">Mulher</label>
           </div>
-          <h5>PESO:</h5>	
+          <h5>PESO:</h5>
           <input type="text" name="peso" class="inputDados peso" value="110">
           <p class="alertTxtPeso"></p>
           <h5>ALTURA:</h5>
-          <input type="text" name="altura" class="inputDados altura" value="183">	
+          <input type="text" name="altura" class="inputDados altura" value="183">
           <p class="alertTxtAltura"></p>
           <h5>IDADE:</h5>
           <input type="text" name="idade" class="inputDados idade" value="32">
           <p class="alertTxtIdade"></p>
-          
-          <h5>PROTEINA:</h5>	
+          <h5>PROTEINA:</h5>
           <input type="text" name="prot" class="inputDados prot" value="45">
           <p class="alertTxtProt"></p>
           <h5>CARBO:</h5>
-          <input type="text" name="carb" class="inputDados carb" value="35">	
+          <input type="text" name="carb" class="inputDados carb" value="35">
           <p class="alertTxtCarb"></p>
           <h5>GORDURA:</h5>
-          <input type="text" name="gord" class="inputDados gord" value="20">	
-          <p class="alertTxtGord"></p>	
+          <input type="text" name="gord" class="inputDados gord" value="20">
+          <p class="alertTxtGord"></p>
           <h5>TMB:</h5>
           <input type="text" name="tmb" disabled class="inputDados tmb">
           <p class="alertTxtTmb"></p>
-          
+
           <div class="buttons">
             <button class="calcular">Calcular</button>
             <button class="reset">Reset</button>
           </div>
-          
+
           <div class="resultTxt">
             <p class="txtProt"></p>
             <p class="txtCarb"></p>
             <p class="txtGord"></p>
           </div>
-          <div class="error"></div>	
+          <div class="error"></div>
         </div>
       </section>
       <section class="bloco" id="contato">
@@ -114,7 +117,7 @@
       </section>
     </section>
   </div>
-    
+
   <script src="./js/index.js"></script>
   <script src="./js/menu.js"></script>
   <script src="./js/menuMobile.js"></script>
@@ -122,6 +125,7 @@
   <script src="./js/projeto.js"></script>
   <script src="./js/calculadora.js"></script>
   <script src="./js/json.js"></script>
-  
-</body> 
+
+</body>
+
 </html>
