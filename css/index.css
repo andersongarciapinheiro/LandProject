@@ -46,24 +46,29 @@
           background-repeat: no-repeat;
           background-position: center;
           background-image: url("https://bnetcmsus-a.akamaihd.net/cms/gallery/6J0O6FJP1O991581454174174.jpg");
+          transition: .5s cubic-bezier(.65,.33,.71,1.08);         
         }
 
         .setBg-a {
           background-repeat: no-repeat;
           background-position: center;
           background-image: url("https://bnetcmsus-a.akamaihd.net/cms/gallery/6J0O6FJP1O991581454174174.jpg");
+          /* transition: .2s; */
         }
         
         .setBg-b {
           background-repeat: no-repeat;
           background-position: center;
           background-image: url("https://bnetcmsus-a.akamaihd.net/cms/gallery/OYNPJ4AN7NGR1582597877633.png");
+          /* transition: .2s; */
+          
         }
 
         .setBg-c {
           background-repeat: no-repeat;
           background-position: center;
           background-image: url("https://bnetcmsus-a.akamaihd.net/cms/gallery/VTQ3BCWTBP1B1580160868201.jpg");
+          /* transition: .2s; */
         }
 
         .left, .right {
@@ -78,6 +83,7 @@
         .left {
           left: 20px;
         }
+        
         .right {
           right: 20px;
         }

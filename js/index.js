@@ -1,24 +1,49 @@
-let getDom = el => {
-  let elemento = document.querySelector(el)
-  return elemento
-}
+let getDom = el => document.querySelector(el)
 
 let bgs = ['setBg-a', 'setBg-b', 'setBg-c']
+let index = 0
+let qtdBg = bgs.length - 1
+let carrosel = getDom(".carrosel-img1")
+let rightButton = getDom(".right")
+let leftButton = getDom(".left")
 
-getDom(".right").onclick = () => {
-  getDom(".carrosel-img1").classList.add(bgs[1])
+
+
+
+
+
+
+
+// rightButton.onclick = null
+
+
+rightButton.onclick = () => {
+  clickRight()
+  
 }
 
-getDom(".left").onclick = () => {
-  getDom(".carrosel-img1").classList.add(bgs[0])
+leftButton.onclick = () => {
+  clickLeft()
 }
 
 
-// function bgRight() {
-
-// }
 
 
 
 
-console.log(bgs.map)
+
+
+
+//////////  FUNCTIONS !!
+
+function clickRight() {
+  carrosel.classList.remove(bgs[index])
+  index = index === qtdBg ? 0 : index + 1
+  carrosel.classList.add(bgs[index])
+}
+
+function clickLeft() {
+  carrosel.classList.remove(bgs[index])
+  index = index === 0 ? qtdBg : index - 1
+  carrosel.classList.add(bgs[index])
+}
