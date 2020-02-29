@@ -9,32 +9,19 @@ let leftButton = getDom(".left")
 
 
 
+rightButton.onclick = rightClick
 
-
-
-
-
-// rightButton.onclick = null
-
-
-rightButton.onclick = () => {
+function rightClick() {
   clickRight()
-  
+  clickDisable()
+  carrosel.addEventListener("transitionend", clickEnable)
 }
 
-leftButton.onclick = () => {
+function leftClick() {
   clickLeft()
+  clickDisable()
+  carrosel.addEventListener("transitionend", clickEnable)
 }
-
-
-
-
-
-
-
-
-
-//////////  FUNCTIONS !!
 
 function clickRight() {
   carrosel.classList.remove(bgs[index])
@@ -46,4 +33,14 @@ function clickLeft() {
   carrosel.classList.remove(bgs[index])
   index = index === 0 ? qtdBg : index - 1
   carrosel.classList.add(bgs[index])
+}
+
+function clickDisable() {
+  rightButton.onclick = null
+  leftButton.onclick = null
+}
+
+function clickEnable() {
+  rightButton.onclick = rightClick
+  leftButton.onclick = leftClick
 }
