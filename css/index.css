@@ -46,14 +46,13 @@
           background-repeat: no-repeat;
           background-position: center;
           background-image: url("https://bnetcmsus-a.akamaihd.net/cms/gallery/6J0O6FJP1O991581454174174.jpg");
-          transition: .5s cubic-bezier(.65,.33,.71,1.08);         
+          transition: .4s cubic-bezier(.65,.33,.71,1.08);
         }
 
         .setBg-a {
           background-repeat: no-repeat;
           background-position: center;
           background-image: url("https://bnetcmsus-a.akamaihd.net/cms/gallery/6J0O6FJP1O991581454174174.jpg");
-          /* transition: .2s; */
         }
         
         .setBg-b {
@@ -74,10 +73,12 @@
         .left, .right {
           position: absolute;
           background-color: #000000;
-          width: 80px;
+          width: 40px;
           height: 80px;
           transform: translateY(-50%);
           top: 50%;
+          opacity: .4;
+          border: 1px solid #828080;
         }
 
         .left {

@@ -24,9 +24,9 @@ nav {
   text-shadow: 1px 1px #000000;
 }
 
-.links a:nth-child(3)::before {
+/* .links a:nth-child(3)::before {
   content: 'Ho';
-}
+} */
 
 /* .links a:nth-child(4)::before {
   content: 'Ga';
