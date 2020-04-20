@@ -9,9 +9,6 @@ let leftButton = getDom(".left")
 let line = document.querySelectorAll(".menu-line")
 
 
-
-
-
 rightButton.onclick = rightClick
 
 function rightClick() {
