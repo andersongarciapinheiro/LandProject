@@ -50,21 +50,46 @@
 
         .txt1,.txt2,.txt3 {
           position: absolute;
-          top: 40%;
+          top: 50%;
+          transform: translateY(-50%);
           left: 13%;
           opacity: 0;
         }
 
-        .carrosel-img1 p:nth-child(1) {
+        .p-title {
           font-size: 60px;
           text-transform: uppercase;
           color: #ffffff;
         }
 
-        .carrosel-img1 p:nth-child(2) {
+        .p-text {
           font-size: 30px;
           color: #ffffff;
         }
+
+        .logoBanner {
+          width: 300px;
+          position: relative;
+          margin-bottom: 30px;
+        }
+
+        .logoBanner > img {
+          position: relative;
+          width: 100%;
+        }
+
+        .bt {
+          width: 250px;
+          height: 40px;
+          background-color: #006fb2;
+          border: 1px solid #00a1b2;
+          font-family: Arial, Helvetica, sans-serif;
+          color: #ffffff;
+          text-align: center;
+          line-height: 40px;
+          margin-top: 20px;
+        }
+
 
         .carrosel-img1 {
           position: relative;
