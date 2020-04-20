@@ -87,10 +87,23 @@
 
         .left {
           left: 20px;
+          font-size: 50px;
+          color: #006fb2;
+          line-height: 70px;
+          text-align: center;
         }
         
         .right {
           right: 20px;
+          font-size: 50px;
+          color: #006fb2;
+          line-height: 70px;
+          text-align: center;
+        }
+
+        .left:hover,
+        .right:hover {
+          color: aqua;
         }
 
         .box-menu-line {
