@@ -6,6 +6,9 @@ let qtdBg = bgs.length - 1
 let carrosel = getDom(".carrosel-img1")
 let rightButton = getDom(".right")
 let leftButton = getDom(".left")
+let line = document.querySelectorAll(".menu-line")
+
+
 
 
 
@@ -24,15 +27,19 @@ function leftClick() {
 }
 
 function clickRight() {
+  line[index].classList.remove("line-selected")
   carrosel.classList.remove(bgs[index])
   index = index === qtdBg ? 0 : index + 1
   carrosel.classList.add(bgs[index])
+  line[index].classList.add("line-selected")
 }
 
 function clickLeft() {
+  line[index].classList.remove("line-selected")
   carrosel.classList.remove(bgs[index])
   index = index === 0 ? qtdBg : index - 1
   carrosel.classList.add(bgs[index])
+  line[index].classList.add("line-selected")
 }
 
 function clickDisable() {

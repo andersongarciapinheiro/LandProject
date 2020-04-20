@@ -2,6 +2,10 @@
           scroll-behavior: smooth;
         } */
 
+        #home {
+          position: relative;
+        }
+
         nav a {
           text-decoration: none;
           color: inherit;
@@ -87,4 +91,25 @@
         
         .right {
           right: 20px;
+        }
+
+        .box-menu-line {
+          position: absolute;
+          left: 50%;
+          transform: translate(-50%);
+          bottom: 2%;
+          width: 350px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+        
+        .menu-line {
+          width: 100px;
+          height: 10px;
+          background-color: #f1f1f150;
+        }
+
+        .line-selected {
+          background-color: #006fb2;
         }
