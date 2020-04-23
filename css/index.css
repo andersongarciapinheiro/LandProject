@@ -48,35 +48,49 @@
           
         }
 
-        .txt1,.txt2,.txt3 {
+        .box1,.box2,.box3 {
           position: absolute;
           top: 50%;
           transform: translateY(-50%);
-          left: 13%;
           opacity: 0;
-        }
-
-        .p-title {
-          font-size: 60px;
-          text-transform: uppercase;
-          color: #ffffff;
-        }
-
-        .p-text {
-          font-size: 30px;
-          color: #ffffff;
         }
 
         .logoBanner {
           width: 300px;
           position: relative;
           margin-bottom: 30px;
+          transition: 0.3s ease-out;
+          opacity: 0;
+          left: 20%;
+
         }
 
         .logoBanner > img {
           position: relative;
           width: 100%;
         }
+
+        .p-title {
+          font-size: 60px;
+          text-transform: uppercase;
+          color: #ffffff;
+          position: relative;
+          transition: 0.4s ease-out;
+          opacity: 0;
+          left: 20%;
+
+        }
+
+        .p-text {
+          font-size: 30px;
+          color: #ffffff;
+          position: relative;
+          transition: 0.6s ease-out;
+          opacity: 0;
+          left: 20%;
+
+        }
+
 
         .bt {
           width: 250px;
@@ -88,6 +102,10 @@
           text-align: center;
           line-height: 40px;
           margin-top: 20px;
+          position: relative;
+          transition: 0.8s ease-out;
+          opacity: 0;
+          left: 20%;
         }
 
 
@@ -180,4 +198,9 @@
           opacity: 1;
           left: 10%;
           transition: .6s ease-out;
+        }
+        
+        .resetLeft {
+          left: 0;
+          opacity: 1;
         }

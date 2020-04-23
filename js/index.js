@@ -9,8 +9,16 @@ let leftButton = getDom(".left")
 let line = document.querySelectorAll(".menu-line")
 let bannerText = document.querySelectorAll(".banner-text")
 
+let logoBanner = document.querySelectorAll(".logoBanner")
+let pTitle = document.querySelectorAll(".p-title")
+let pText = document.querySelectorAll(".p-text")
+let bt = document.querySelectorAll(".bt")
+
+
+
 
 rightButton.onclick = rightClick
+leftButton.onclick = leftClick
 
 function rightClick() {
   clickRight()
@@ -25,23 +33,31 @@ function leftClick() {
 }
 
 function clickRight() {
-  bannerText[index].classList.remove("show-display")
-  line[index].classList.remove("line-selected")
-  carrosel.classList.remove(bgs[index])
+  classRemove(logoBanner[index],"resetLeft")
+  classRemove(pTitle[index],"resetLeft")
+  classRemove(pText[index],"resetLeft")
+  classRemove(bt[index],"resetLeft")
+  classRemove(bannerText[index],"show-display")
+  classRemove (line[index], "line-selected")
+  classRemove(carrosel,bgs[index])
   index = index === qtdBg ? 0 : index + 1
-  carrosel.classList.add(bgs[index])
-  line[index].classList.add("line-selected")
-  bannerText[index].classList.add("show-display")
+  classAdd(carrosel, bgs[index])^
+  classAdd(line[index], "line-selected")
+  classAdd(bannerText[index], "show-display")
+  classAdd(logoBanner[index],"resetLeft")
+  classAdd(pTitle[index],"resetLeft")
+  classAdd(pText[index],"resetLeft")
+  classAdd(bt[index],"resetLeft")
 }
 
 function clickLeft() {
-  bannerText[index].classList.remove("show-display")
-  line[index].classList.remove("line-selected")
-  carrosel.classList.remove(bgs[index])
+  classRemove(bannerText[index],"show-display")
+  classRemove (line[index], "line-selected")
+  classRemove(carrosel,bgs[index])
   index = index === 0 ? qtdBg : index - 1
-  carrosel.classList.add(bgs[index])
-  line[index].classList.add("line-selected")
-  bannerText[index].classList.add("show-display")
+  classAdd(carrosel, bgs[index])^
+  classAdd(line[index], "line-selected")
+  classAdd(bannerText[index], "show-display")
 }
 
 function clickDisable() {
@@ -52,4 +68,14 @@ function clickDisable() {
 function clickEnable() {
   rightButton.onclick = rightClick
   leftButton.onclick = leftClick
+}
+
+
+function classAdd(el, elClass) {
+  el.classList.add(elClass)
+}
+
+
+function classRemove(el, elClass) {
+  el.classList.remove(elClass)
 }
